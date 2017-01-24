@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.law.eishan.calculator.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/text"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/black"
+       android:textSize="25dp"
+     />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clearscreen"
+        android:orientation="horizontal"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="20dp"
+        >
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="x!"
+            android:id="@+id/factorial"
+            android:onClick="clicked"
+            android:layout_marginRight="7dp"/>
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="\u03C0"
+            android:id="@+id/pi"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="\u00b1"
+            android:id="@+id/sign"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="Delete"
+            android:id="@+id/clearbutton"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="clear"
+            android:id="@+id/fullclear"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:text="+"
+            android:id="@+id/plus"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clearscreen"
+        android:orientation="horizontal"
+        android:id="@+id/layout1"
+        android:layout_marginLeft="20dp">
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="x\u207f"
+            android:id="@+id/power"
+            android:onClick="clicked"
+            android:layout_marginRight="7dp"/>
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="log"
+            android:id="@+id/log"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="1"
+            android:id="@+id/one"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+           />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="2"
+            android:id="@+id/two"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="3"
+            android:id="@+id/three"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:text="-"
+            android:id="@+id/minus"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+        android:orientation="horizontal"
+        android:id="@+id/layout3"
+        android:layout_marginLeft="20dp">
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="sin(x)"
+            android:id="@+id/sin"
+            android:onClick="clicked"
+            android:layout_marginRight="7dp"/>
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="ln"
+            android:id="@+id/ln"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="7"
+            android:id="@+id/seven"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="8"
+            android:id="@+id/eight"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="9"
+            android:id="@+id/nine"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:text="\u00f7"
+            android:id="@+id/divide"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout3"
+        android:orientation="horizontal"
+        android:id="@+id/layout4"
+        android:layout_marginLeft="20dp">
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="cos(x)"
+            android:id="@+id/cos"
+            android:onClick="clicked"
+            android:layout_marginRight="7dp"
+            />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="\u221a"
+            android:id="@+id/sqrt"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+
+
+        <Button
+        android:layout_width="75dp"
+        android:layout_height="45dp"
+        android:text="0"
+            android:id="@+id/zero"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="."
+            android:id="@+id/point"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="="
+            android:id="@+id/equal"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+
+
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:text="%"
+            android:id="@+id/percent"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layout2"
+        android:layout_below="@+id/layout1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp">
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="tan(x)"
+            android:id="@+id/tan"
+            android:onClick="clicked"
+            android:layout_marginRight="7dp"/>
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="\u212f"
+            android:id="@+id/exponential"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="4"
+            android:id="@+id/four"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="5"
+            android:id="@+id/five"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:text="6"
+            android:id="@+id/six"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:text="x"
+            android:id="@+id/multiply"
+            android:onClick="clicked"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
